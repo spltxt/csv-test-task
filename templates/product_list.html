@@ -1,5 +1,8 @@
 {% for product in products %}
-{{ product.name }}
+[{{ product.code }}] - {{ product.name }} - {{ product.level_one }} - {{ product.level_two }}
+    - {{ product.level_three }} - {{ product.price }} - {{ product.alt_price }} - {{ product.quantity }}
+    {{ product.property_fields }} - {{ product.joint_purchases }} - {{ product.measure_unit }}
+    - {{ product.image }} - {{ product.display_on_index }} - {{ product.description }}
 <hr>
 {% empty %}
 no products available
